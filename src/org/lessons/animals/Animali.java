@@ -6,6 +6,7 @@ public abstract class Animali {
 		  void verso() {}
 		}
 
+
 		class Cane extends Animali {
 		  void dormi() {
 		    System.out.println("Il cane dorme" + " " + "Zzz");
@@ -18,6 +19,10 @@ public abstract class Animali {
 		  void verso() {
 		    System.out.println("Il cane fa il verso " + " " + "Bau");
 		  }
+		  
+		  void nuota() {
+				System.out.println("Cane: Sto nuotando");
+			  }
 		}
 
 		class Passerotto extends Animali {
@@ -31,6 +36,10 @@ public abstract class Animali {
 		  
 		  void verso() {
 		    System.out.println("Il passerotto fa il verso" + " " + "chip chip");
+		  }
+		  
+		  void vola() {
+			  System.out.println("Passerotto : sto volando");
 		  }
 		}
 
@@ -46,6 +55,10 @@ public abstract class Animali {
 		  void verso() {
 		    System.out.println("L'aquila fa il verso" + " " + "scretchhh");
 		  }
+		  
+		  void vola() {
+			  System.out.println("Aquila : sto volando");
+		  }
 		}
 
 		class Delfino extends Animali {
@@ -60,4 +73,10 @@ public abstract class Animali {
 		  void verso() {
 		    System.out.println("Il delfino fa il verso" + " " +"hfhdshfsdhfshd");
 		  }
+		  
+		  void nuota() {
+			System.out.println("Delfino: Sto nuotando");
+		  }
+		  
 }
+		
