@@ -1,80 +1,69 @@
 package org.lessons.animals;
 
 public abstract class Animali {
-		  abstract void dormi();
-		  abstract void mangia();
-		  void verso() {}
+		  public void dormi() { 
+			  System.out.println("zzzzzz");};
+		  public abstract void mangia();
+		  public abstract void verso();
 		}
 
 
-		class Cane extends Animali {
-		  void dormi() {
-		    System.out.println("Il cane dorme" + " " + "Zzz");
-		  }
+		class Cane extends Animali implements Nuotare{
 		  
-		  void mangia() {
+		  public void mangia() {
 		    System.out.println("il cane " + " " + "Mangia carne");
 		  }
 		  
-		  void verso() {
+		  public void verso() {
 		    System.out.println("Il cane fa il verso " + " " + "Bau");
 		  }
 		  
-		  void nuota() {
+		  public void nuota() {
 				System.out.println("Cane: Sto nuotando");
 			  }
 		}
 
-		class Passerotto extends Animali {
-		  void dormi() {
-		    System.out.println("Il passerotto dorme" + " " + "Zzz");
-		  }
+		class Passerotto extends Animali implements Volare{
 		  
-		  void mangia() {
+		  public void mangia() {
 		    System.out.println("Il passerotto" + " " +"Mangia semi");
 		  }
 		  
-		  void verso() {
+		  public void verso() {
 		    System.out.println("Il passerotto fa il verso" + " " + "chip chip");
 		  }
 		  
-		  void vola() {
+		  public void vola() {
 			  System.out.println("Passerotto : sto volando");
 		  }
 		}
 
-		class Aquila extends Animali {
-		  void dormi() {
-		    System.out.println("L'aquila dorme" + " " + "Zzz");
-		  }
+		class Aquila extends Animali implements Volare{
 		  
-		  void mangia() {
+		  public void mangia() {
 		    System.out.println("L'aquila" + " " + "Mangia carne");
 		  }
 		  
-		  void verso() {
+		  public void verso() {
 		    System.out.println("L'aquila fa il verso" + " " + "scretchhh");
 		  }
 		  
-		  void vola() {
+		  public void vola() {
 			  System.out.println("Aquila : sto volando");
 		  }
 		}
 
-		class Delfino extends Animali {
-		  void dormi() {
-		    System.out.println("Il delfino dorme" + " " + "Zzz");
-		  }
+		class Delfino extends Animali implements Nuotare{
 		  
-		  void mangia() {
+		  public void mangia() {
 		    System.out.println("Il delfino dorme" + " " +"Mangia pesce");
 		  }
 		  
-		  void verso() {
+		  public void verso() {
 		    System.out.println("Il delfino fa il verso" + " " +"hfhdshfsdhfshd");
 		  }
 		  
-		  void nuota() {
+		  public void nuota() {
 			System.out.println("Delfino: Sto nuotando");
 		  }
 		  

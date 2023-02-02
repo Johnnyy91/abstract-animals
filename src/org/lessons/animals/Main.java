@@ -4,34 +4,34 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-			    Animali cane = new Cane();
-			    Animali passerotto = new Passerotto();
-			    Animali aquila = new Aquila();
-			    Animali delfino = new Delfino();
+			    Cane cane = new Cane();
+			    Passerotto passerotto = new Passerotto();
+			    Aquila aquila = new Aquila();
+			    Delfino delfino = new Delfino();
 			    
 			    cane.dormi();
 			    cane.mangia();
 			    cane.verso();
 			    
-			    ((Cane) cane).nuota();
+			    cane.nuota();
 			    
 			    passerotto.dormi();
 			    passerotto.mangia();
 			    passerotto.verso();
 			    
-			    ((Passerotto) passerotto).vola();
+			    passerotto.vola();
 			    
 			    aquila.dormi();
 			    aquila.mangia();
 			    aquila.verso();
 			    
-			    ((Aquila) aquila).vola();
+			    aquila.vola();
 			    
 			    delfino.dormi();
 			    delfino.mangia();
 			    delfino.verso();
 			    
-			    ((Delfino) delfino).nuota();
+			    delfino.nuota();
 			    
 			    
 	}
